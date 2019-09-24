@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/image_classification.iml" filepath="$PROJECT_DIR$/.idea/image_classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/release_goblin_ai.iml" filepath="$PROJECT_DIR$/.idea/release_goblin_ai.iml" />
     </modules>
   </component>
 </project>
