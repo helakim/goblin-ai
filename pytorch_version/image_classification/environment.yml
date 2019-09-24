@@ -1,0 +1,16 @@
+name: goblin-ai
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6.5
+  - pytorch=1.2.0
+  - torchvision=0.4.0
+  - click
+  - matplotlib
+  - numpy
+  - opencv
+  - scipy
+  - tqdm
+  - visdom
