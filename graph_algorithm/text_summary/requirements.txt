@@ -1,0 +1,5 @@
+joblib
+networkx
+smart_open
+jpype1-py3
+tqdm
