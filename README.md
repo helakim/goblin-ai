@@ -25,4 +25,4 @@ version: 0.0.1 (29, september, 2019)
  - Add the cerberus summary inference code
    
 ## Author
- - kyung tae kim (firefoxdev0619@gmail)
+ - kyung tae kim (firefoxdev0619@gmail.com)
