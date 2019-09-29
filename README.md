@@ -8,6 +8,7 @@ Korean documents will be added later
 ## Major features (Click the link)
 
 Computer Vision
+- [Expansion Pyramid Network for high resolution face detection](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection) - (Called by Only-U)
 
 Neural Graph
 
