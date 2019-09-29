@@ -11,8 +11,9 @@ Computer Vision
 
 Neural Graph
 
-Neural Language Processing
 - [Graph-based Korean sentence summary algorithm](https://github.com/helakim/goblin-ai/tree/master/graph_algorithm/text_summary) - (Called by Cerberus Summary)
+
+Neural Language Processing
 
 Explainable Deep Learning Model
 
