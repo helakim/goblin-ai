@@ -130,5 +130,3 @@ $(3.5) python
 - [A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise](http://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)
 - [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 - [Markov matrices](http://www.math.harvard.edu/~knill/teaching/math19b_2011/handouts/lecture33.pdf)
-
-
