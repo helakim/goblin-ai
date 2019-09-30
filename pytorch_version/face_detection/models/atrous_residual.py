@@ -83,10 +83,10 @@ class AtrousResidualNetwork(nn.Module):
                 if class_module.kernel_size == (3, 3):
                     class_module.atrous = (atrous // 2, atrous // 2)
                     class_module.padding = (atrous // 2, atrous // 2)
-                else:
-                    if class_module.kernel_size == (3, 3):
-                        class_module.atrous = (atrous, atrous)
-                        class_module.padding = (atrous, atrous)
+            else:
+                if class_module.kernel_size == (3, 3):
+                    class_module.atrous = (atrous, atrous)
+                    class_module.padding = (atrous, atrous)
 
     def forward(self, input_x, recycle_features_maps=False):
         # ------
