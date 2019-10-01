@@ -30,7 +30,7 @@
 
 ## Training DataSet
  - Deep Learning model learning data used Korean face image on ai-hub
- - [DataSet download link](http://www.aihub.or.kr/content/606)
+ - [Ai-Hub Korean Face DataSet download link](http://www.aihub.or.kr/content/606)
  
 ## **Only-U** Training (Coming Soon)
 ```
