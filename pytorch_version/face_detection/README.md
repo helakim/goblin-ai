@@ -37,7 +37,7 @@
 #### **Only-U** Single Inference (Coming Soon)
  - Todo
 
-#### Results
+#### Inference Results
 - multi-person facial detection (by google.com)
 ![test_case_1](results/test_case_1_inference_result.jpg)
 
