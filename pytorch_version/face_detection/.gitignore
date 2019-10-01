@@ -201,3 +201,13 @@ dmypy.json
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+pre_trained/*
+pre_trained/
+
+### current ignore inference and builder
+samples
+samples/*
+model_inference.py
+models/builder.py
+models/detector.py
+models/detector_v1_older.py
