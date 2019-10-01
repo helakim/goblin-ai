@@ -1,4 +1,4 @@
-## Detector Backbone (Only-U) for Face Detection
+## Expansion Pyramid Network for high resolution face detection (Only-U)
 ![backbone_1](fig/backbone-1.png)
 
 ---
