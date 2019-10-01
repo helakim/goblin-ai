@@ -19,7 +19,8 @@
 
 4. We use FP16 to reduce training times by 3 to 4 times compared to FP32.
 
-## Installation (Denpendencies)
+## Installation (Dependencies)
+    Todo 
 
 ## Only-U requires:
     1. pytorch 1.2.0
@@ -32,7 +33,14 @@
  - [DataSet download link](http://www.aihub.or.kr/content/606)
  
 ## **Only-U** Training (Coming Soon)
- - Todo
+```
+python model_train.py -gpu=0,1 \  # multi-gpu 
+                      -data_set=samples/train/annotation.json \
+                      -val_set=samples/val/annotation.json \
+                      -backbone=default # choose [atrous50, atrous101, atrous152, res50, res101, res152] \
+                      -save_path=train_results \
+                      -visdom_use=True
+```
 
 ## **Only-U** Single Inference (Coming Soon)
  - Todo
