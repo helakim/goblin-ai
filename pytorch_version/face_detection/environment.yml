@@ -1,4 +1,4 @@
-name: goblin-ai
+name: face_detection_only_u
 channels:
   - pytorch
   - conda-forge
@@ -6,7 +6,7 @@ channels:
 dependencies:
   - python=3.6.5
   - pytorch=1.2.0
-  - torchvision=0.4.0
+  - torchvision=0.3.0
   - click
   - matplotlib
   - numpy

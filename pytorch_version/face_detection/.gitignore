@@ -208,6 +208,8 @@ pre_trained/
 samples
 samples/*
 model_inference.py
+model_train.py
 models/builder.py
 models/detector.py
 models/detector_v1_older.py
+results
