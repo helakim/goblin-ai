@@ -1,4 +1,4 @@
-### Detector Backbone (Only-U) 
+## Detector Backbone (Only-U) for Face Detection
 ![backbone_1](fig/backbone-1.png)
 
 ---
@@ -21,23 +21,23 @@
 
 ## Installation (Denpendencies)
 
-#### Only-U requires:
+## Only-U requires:
     1. pytorch 1.2.0
     2. torchvision >= 0.3.0
     3. opencv-contrib >= 3.3.49
     4. CUDA >= 10.0 and CuDnn >= 8.0
 
-#### Training DataSet
+## Training DataSet
  - Deep Learning model learning data used Korean face image on ai-hub
  - [DataSet download link](http://www.aihub.or.kr/content/606)
  
-#### **Only-U** Training (Coming Soon)
+## **Only-U** Training (Coming Soon)
  - Todo
 
-#### **Only-U** Single Inference (Coming Soon)
+## **Only-U** Single Inference (Coming Soon)
  - Todo
 
-#### Inference Results
+## Inference Results
 - multi-person facial detection (by google.com)
 ![test_case_1](results/test_case_1_inference_result.jpg)
 
@@ -52,16 +52,17 @@
 
 - validation image detection (by ai-hub.co.kr)
 ![face_case_4](results/test_case_4_inference_result.jpg)
-#### Todo
+
+
+## Todo
  - [ ] Deep Learning Model(Only-U) training code
  - [ ] Deep Learning Model(Only-U) inference code
  - [ ] Add reference
 
-#### Author
+## Author
  - kyung tae kim (firefoxdev0619@gmail.com)
 
-#### References
-
+## References
 
 ```
 @misc{Only-U 2019,
@@ -70,4 +71,10 @@
   howpublished = {\url{https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection}},
   year =         {2019}
 }
+```
+
+## Contact
+For any question, feel free to contact :)
+```
+kyung tae kim     : firefoxdev0619@gmail.com
 ```
