@@ -38,14 +38,36 @@
  - Todo
 
 #### Results
+- multi-person facial detection (by google.com)
+![test_case_1](results/test_case_1_inference_result.jpg)
 
+
+- basic facial detection (by google.com)
+![test_case_2](results/test_case_2_inference_result.jpg)
+
+
+- 19th Century Person Face detection (by google.com)
+![face_case_3](results/test_case_3_inference_result.jpg)
+
+
+- validation image detection (by ai-hub.co.kr)
+![face_case_4](results/test_case_4_inference_result.jpg)
 #### Todo
- - Todo
-
-#### For more information
- - Todo
+ - [ ] Deep Learning Model(Only-U) training code
+ - [ ] Deep Learning Model(Only-U) inference code
+ - [ ] Add reference
 
 #### Author
  - kyung tae kim (firefoxdev0619@gmail.com)
 
 #### References
+
+
+```
+@misc{Only-U 2019,
+  author =       {kyung tae kim},
+  title =        {Only-U},
+  howpublished = {\url{https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection}},
+  year =         {2019}
+}
+```
