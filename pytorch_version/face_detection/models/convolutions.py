@@ -43,7 +43,8 @@ class FeatureEnhanceModule(nn.Module):
         super(FeatureEnhanceModule, self).__init__()
         filter_size = [128, 256]
         self.channel_size = channel_size
-
+        # ------
+        # feature extraction
         self.cpm1 = local_convolution(in_channels=self.channel_size, out_channels=filter_size[1])
         self.cpm2 = nn.Conv2d(in_channels=self.channel_size, out_channels=filter_size[1], kernel_size=3, dilation=2, stride=1, padding=2)
         self.cpm3 = local_convolution(in_channels=filter_size[1], out_channels=filter_size[0])

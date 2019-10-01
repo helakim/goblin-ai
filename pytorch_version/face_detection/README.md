@@ -26,10 +26,21 @@
     2. torchvision >= 0.3.0
     3. opencv-contrib >= 3.3.49
     4. CUDA >= 10.0 and CuDnn >= 8.0
-    
-#### Todo
+
+#### Training DataSet
+ - Deep Learning model learning data used Korean face image on ai-hub
+ - [DataSet download link](http://www.aihub.or.kr/content/606)
+ 
+#### **Only-U** Training (Coming Soon)
  - Todo
 
+#### **Only-U** Single Inference (Coming Soon)
+ - Todo
+
+#### Results
+
+#### Todo
+ - Todo
 
 #### For more information
  - Todo
