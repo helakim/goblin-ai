@@ -99,11 +99,11 @@ class DetectionHead(object):
     def forward(self, location_tensor, conf_score, prior_boxes, conf_thresh, nms_thresh):
         """
         Args:
-            :param location_tensor:
-            :param conf_score:
-            :param prior_boxes:
-            :param conf_thresh:
-            :param nms_thresh:
+            :param location_tensor: fully convolution layer maps
+            :param conf_score: predictions thresh hold
+            :param prior_boxes: Change the value of center x and center y to [min x, min y, max x, max y]
+            :param conf_thresh: Threshold for confidence scores
+            :param nms_thresh: Threshold for non maximum support
 
         Testing: True
         """
@@ -119,17 +119,15 @@ class DetectionHead(object):
         bbox_buckets = []
 
         for idx in range(batch_size):
-            basic_box = prior_boxes  # default box
+            basic_box = prior_boxes
             # ------
             # decoding bounding boxes
             decode_coords = prediction_coords(location_tensor[idx], priors_bbox=basic_box, variances=self.variance)
-            # -------------------------- #
             confidence_scores = score_predictions[idx, max_value]  # choose one
             indices = (confidence_scores >= conf_thresh).nonzero().squeeze()
             decode_coords = decode_coords[indices]
-
             confidence_scores = confidence_scores[indices]
-            # -------------------------- #
+
             if confidence_scores.dim() == 0:
                 # sorted by confidence scores [one of bounding boxes]
                 # bbox_buckets.append(np.zeros(0, 5))
