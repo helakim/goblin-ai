@@ -84,7 +84,7 @@ def load_checkpoint(checkpoint_path, model, device, optimizer=None):
     return state_epoch
 
 
-def elpased_time(func):
+def elapsed_time(func):
     def new_func(*args, **args2):
         start_time = time.time()
         backward = func(*args, *args2)
