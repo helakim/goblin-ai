@@ -63,14 +63,15 @@ python model_train.py -gpu=0,1 \  # multi-gpu
 
 
 ## Todo
- - [ ] Deep Learning Model(Only-U) training code
- - [ ] Deep Learning Model(Only-U) inference code
+ - [ ] Deep Learning Model (Only-U) training code
+ - [ ] Deep Learning Model (Only-U) inference code
  - [ ] Add reference
 
 ## Author
  - kyung tae kim (firefoxdev0619@gmail.com)
 
 ## References
+ - Todo
 
 ```
 @misc{Only-U 2019,

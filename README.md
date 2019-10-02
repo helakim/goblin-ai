@@ -21,10 +21,11 @@ Explainable Deep Learning Model
 
 End to End Deep Learning Model
 
-Use Case for Application (Using *Goblin-AI*)
+Toy project created using Goblin-AI (Using `Goblin-AI`)
  - [Neural Language Processing Application Level ]() - (Called by Quasar) 
-    - Using `Cerberus Summary` (Graph-based Korean sentence summary algorithm)
-    - Using GB-pool with weighted convolution for large scale text Classification
+    1.  Using `Cerberus Summary` (Graph-based Korean sentence summary algorithm)
+    
+    2.  Using GB-pool with weighted convolution for large scale text Classification
 ## Updates
 
 #### version: 0.0.3 (03, october, 2019)
@@ -33,7 +34,7 @@ Use Case for Application (Using *Goblin-AI*)
 #### version: 0.0.2 (02, october, 2019)
  - A `pure pytorch` implementation of Expansion Pyramid Network for high resolution face detection
  - add inference result
- - improving training model(Only-U)  
+ - improving training model (Only-U)  
 
 #### version: 0.0.1 (29, september, 2019)
  - Implementation of the Cerberus Summary using Python only
