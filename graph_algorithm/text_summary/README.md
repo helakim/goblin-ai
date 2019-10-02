@@ -45,14 +45,16 @@ $ ./ubuntu_mecab_install.sh
 ```
 <br>
 <br>
-The easiest way to install Cerberus Summary is using python3
+
+#### The easiest way to install Cerberus Summary is using python3
 
 ```bash
 $(3.5) python setup.py install 
 ``` 
 <br>
 <br>
-**Try you first Cerberus Summary Package**
+
+#### Try you first Cerberus Summary Package
 
 ```bash
 # to add anaconda environment later
@@ -60,7 +62,8 @@ source activate ${goblin-ai}
 ```
 <br>
 <br>
-**Step 2. import library(cerberus summary)**
+
+#### Step 2. import library(cerberus summary)
 
 ```bash
 $(3.5) python
@@ -73,7 +76,8 @@ $(3.5) python
 
 <br>
 <br>
-**Step 2. cerberus summary class load**
+
+#### Step 2-1. cerberus summary class load
 
 1. The first vector space contains a condensed sentence.
 2. The second vector space contains a tokenized index of the document.
@@ -94,7 +98,7 @@ $(3.5) python
 <br>
 <br>
 
-**Step 3. Result (text summary)**
+#### Step 3. Result (text summary)
 ```
  First, move the documents in the samples directory
  Second, run inference_summary.py
@@ -130,3 +134,18 @@ $(3.5) python
 - [A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise](http://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)
 - [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 - [Markov matrices](http://www.math.harvard.edu/~knill/teaching/math19b_2011/handouts/lecture33.pdf)
+
+```
+@misc{CerberusSummary 2019,
+  author =       {kyung tae kim},
+  title =        {CerberusSummary},
+  howpublished = {\url{https://github.com/helakim/goblin-ai/tree/master/graph_algorithm/text_summary}},
+  year =         {2019}
+}
+```
+
+## Contact
+For any question, feel free to contact :)
+```
+kyung tae kim     : firefoxdev0619@gmail.com
+```
