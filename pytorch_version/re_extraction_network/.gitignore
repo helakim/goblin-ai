@@ -216,3 +216,4 @@ samples
 samples/*
 pretrained
 pretrained/*
+cfg/cv.py
