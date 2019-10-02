@@ -18,7 +18,9 @@
 # vVVv    vVVv                 ': |_| |_| |_|\___/___|_|_|_|\__,_| ''
 #
 # *********************************************************************
+import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from models.layer import Bottleneck, local_convolution
 
 
@@ -98,3 +100,41 @@ def model_call(**kwargs):
     m = Network(Bottleneck, [3, 4, 6, 3], **kwargs)
 
     return m
+
+
+class ResidualNetwork(nn.Module):
+
+    def __init__(self, num_classes, **kwargs):
+        """
+        Args:
+            :param num_classes: fully connected output hidden units
+        """
+        super(ResidualNetwork, self).__init__()
+        cnn_backbone = model_call(**kwargs)
+        # ------
+        # feature extraction layer (reduce last 2 layers)
+        self.base = nn.Sequential(*list(cnn_backbone.children()))[:-2]
+        # ------
+        # fully connected layer with soft max layer (classifier)
+        self.feat_dim = 512 * 4
+
+        # ------
+        # feature extraction layers
+        self.conv1 = nn.Conv2d(in_channels=self.feat_dim, out_channels=128, kernel_size=1, stride=1, padding=0,bias=True)
+        self.bn = nn.BatchNorm2d(self.feat_dim)
+        self.relu = nn.ReLU(inplace=True)
+        # ------
+        # fc7 layers (obtain a alpha weights)
+        self.classifier = nn.Linear(in_features=self.feat_dim, out_features=num_classes)
+
+    def forward(self, x):
+        global last_feature_map
+        x = self.base(x)
+        last_feature_map = last_feature_map.view(last_feature_map.size()[0:3])
+        last_feature_map = last_feature_map / torch.pow(last_feature_map, 2).sum(dim=1,keepdim=True).clamp(min=3e-11).sqrt()
+        # ------
+        # Computed Convolution Filter -> Function Space Transform -> Vector Space
+        x = F.avg_pool2d(x, x.size()[2:])
+        fn_space = x.view(x.size(0), -1)
+
+        return fn_space, last_feature_map
