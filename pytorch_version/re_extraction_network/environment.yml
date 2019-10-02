@@ -15,3 +15,7 @@ dependencies:
   - scipy
   - tqdm
   - visdom
+  - sklearn
+  - h5py
+  - pyyaml
+  - visdom
