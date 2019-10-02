@@ -18,3 +18,17 @@
 # vVVv    vVVv                 ': |_| |_| |_|\___/___|_|_|_|\__,_| ''
 #
 # *********************************************************************
+from models.backbone import ResidualNetwork
+
+__model_factory = {'resnet50': ResidualNetwork}
+
+
+def get_names():
+    return __model_factory.keys()
+
+
+def init_model(name, *args, **kwargs):
+    if name not in __model_factory.keys():
+        raise KeyError('un-know backbone neural network: {}'.format(name))
+
+    return __model_factory[name](*args, **kwargs)
