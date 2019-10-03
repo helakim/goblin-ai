@@ -1,0 +1,11 @@
+## References
+1. [Detecting Text in Natural Image with Connectionist Text Proposal Network](https://arxiv.org/abs/1609.03605)
+2. [TextBoxes: A fast text detector with a single deep neural network](https://arxiv.org/pdf/1611.06779.pdf)
+3. [EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155)
+4. [Multi-scale FCN with Cascaded Instance Aware Segmentation for Arbitrary Oriented Word Spotting In The Wild](http://openaccess.thecvf.com/content_cvpr_2017/papers/He_Multi-Scale_FCN_With_CVPR_2017_paper.pdf)
+5. [FOTS: Fast Oriented Text Spotting with a Unified Network](https://arxiv.org/abs/1801.01671)
+6. [Mask TextSpotter: An End-to-End Trainable Neural Network for Spotting Text with Arbitrary Shapes](https://arxiv.org/abs/1807.02242)
+7. [PixelLink: Detecting Scene Text via Instance Segmentation](https://arxiv.org/pdf/1801.01315.pdf)
+8. [An Anchor-Free Region Proposal Network for Faster R-CNN based Text Detection Approaches](An Anchor-Free Region Proposal Network for Faster R-CNN based Text Detection Approaches)
+9. [IncepText: A New Inception-Text Module with Deformable PSROI Pooling for Multi-Oriented Scene Text Detection](https://arxiv.org/pdf/1805.01167.pdf)
+10. [Look More Than Once: An Accurate Detector for Text of Arbitrary Shapes Screen reader support enabled](https://arxiv.org/pdf/1904.06535.pdf)
