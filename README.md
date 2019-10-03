@@ -8,6 +8,8 @@ Korean documents will be added later
 ## Major features (Click the link)
 
 Computer Vision
+
+- [Joint Attention Expansion Pyramid Network for Text Region Segmentation]() - (Called by JYP)
 - [Expansion Pyramid Network for high resolution face detection](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection) - (Called by Only-U)
 - [Re-Extraction-Network for Special Trace MAP](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/re_extraction_network) - (Called by Argos-EYE)
 
@@ -16,6 +18,8 @@ Neural Graph
 - [Graph-based Korean sentence summary algorithm](https://github.com/helakim/goblin-ai/tree/master/graph_algorithm/text_summary) - (Called by Cerberus Summary)
 
 Neural Language Processing
+
+- [GB-pool with weighted convolution for large scale text Classification]()
 
 Explainable Deep Learning Model
 
