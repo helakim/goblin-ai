@@ -42,7 +42,7 @@ class E(object):
             x = np.random.randint(width)
             y = np.random.randint(height)
             # -------
-            # cliped x, y coordinates
+            # clip x, y coordinates
             x_min = np.clip(x - self.n // 2.0, 0, width)
             y_min = np.clip(y - self.n // 2.0, 0, height)
             x_max = np.clip(x + self.n // 2.0, 0, width)
@@ -182,8 +182,7 @@ class DataAugmentor(object):
             trans_img_width = 300
             trans_img_height = int(trans_img_width * polygon_aspect_ratio)
             src_ref_pts = np.float32(coordi)
-            dst_ref_pts = np.float32([[0, 0], [trans_img_width - 1, 0], [trans_img_width - 1, trans_img_height - 1],
-                                      [0, trans_img_height - 1]])
+            dst_ref_pts = np.float32([[0, 0], [trans_img_width - 1, 0], [trans_img_width - 1, trans_img_height - 1], [0, trans_img_height - 1]])
 
             trans_matrix = cv2.getPerspectiveTransform(dst_ref_pts, src_ref_pts)
             blocks_pts = []
@@ -220,12 +219,6 @@ class DataAugmentor(object):
             result_lt_y = min(result_block[0][1], result_block[1][1])
             result_rt_x = max(result_block[1][0], result_block[2][0])
             result_rt_y = max(result_block[2][1], result_block[3][1])
-            # ------
-            # we got a minima coordinate
-            # result_lt_x = (result_block[0][0] + result_block[3][0]) * 0.05
-            # result_lt_y = min(result_block[0][1], result_block[1][1])
-            # result_rt_x = (result_block[1][0] + result_block[2][0]) * 0.05
-            # result_rt_y = max(result_block[2][1], result_block[3][1])
 
             result_rects.append([result_lt_x, result_lt_y, result_rt_x, result_rt_y])
 
@@ -309,7 +302,7 @@ class DataAugmentor(object):
         rotate_matrix = cv2.getRotationMatrix2D((new_width * 0.5, new_height * 0.5), angle, 1)
         # ------
         # calculate the offset from the center point of the original
-        # image to the center ponits of the `target_image` (rotate affine matirx)
+        # image to the center points of the `target_image` (rotate affine matrix)
         rotate_move = np.dot(rotate_matrix, np.array([(new_width - width) * 0.5, (new_height - height) * 0.5, 0]))
         # ------
         # update affine matrix

@@ -16,3 +16,4 @@ dependencies:
   - visdom
   - scikit-image
   - pyclipper
+  - fire

@@ -204,8 +204,13 @@ dmypy.json
 pre_trained/*
 pre_trained/
 
-### current ignore inference and builder
+### current ignore inference and builder (TODO upload)
 samples
 samples/*
 model_inference.py
 model_train.py
+models/backbone_v2.py
+models/build.py
+models/detector.py
+model_train.py
+model_inference.py

@@ -188,7 +188,11 @@ class ExpansionPyramidNetwork(nn.Module):
         self.latlayer5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=1, stride=1, padding=0)
         self.latlayer6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=1, stride=1, padding=0)
 
-        self.conv = nn.Sequential(nn.Conv2d(in_channels=1024, out_channels=256, kernel_size=3, padding=1, stride=1),
+        self.conv = nn.Sequential(nn.Conv2d(in_channels=1024,
+                                            out_channels=256,
+                                            kernel_size=3,
+                                            padding=1,
+                                            stride=1),
                                   nn.BatchNorm2d(num_features=256),
                                   nn.ReLU(inplace=True))
         self.out_conv = nn.Conv2d(in_channels=256, out_channels=result_num, kernel_size=1, stride=1)
