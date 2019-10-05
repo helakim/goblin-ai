@@ -65,15 +65,15 @@ python model_inference.py --model_path=pre_trained_model/best_acc.pth \
 
 ## Inference Result
 
- - Detection License Plate (by google)
+- Detection License Plate (by google)
  ![test_1](fig/test_1.png)
-     
- - Detection Scene text (My cell phone)
+ 
+- Detection Scene text (My cell phone)
  ![test_2](fig/test_3.png)
  ![test_3](fig/test_4.png)
  ![test_4](fig/test_5.png)
  
- - Detection Pass port (by google)
+- Detection Pass port (by google)
  ![test_5](fig/test_case_7.png)
  ![test_6](fig/test_case_8.png)
  
