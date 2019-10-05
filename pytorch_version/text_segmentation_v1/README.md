@@ -23,7 +23,7 @@
 5. We use FP16 to reduce training times by 3 to 4 times compared to FP32.
 
 
-## Only-U requires:
+## JYP requires:
     1. pytorch 1.2.0
     2. torchvision >= 0.3.0
     3. opencv-contrib >= 3.3.49
