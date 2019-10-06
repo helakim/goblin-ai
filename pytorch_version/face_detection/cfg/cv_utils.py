@@ -161,3 +161,15 @@ def prediction_coords(location, priors_bbox, variances):
     coords[:, 2:] += coords[:, :2]
 
     return coords  # [(x_min, y_min, x_max, y_max)]
+
+
+def show_masking_bbox_v1(x, anchors):
+    alpha_value = 0.671
+    img = x
+    for anchor in anchors:
+        x_over = x.copy()
+        x_min, y_min, x_max, y_max = [np.int(_) for _ in anchor]
+        cv2.rectangle(x, (x_min, y_min), (x_max, y_max), (255, 255, 0), -1)
+        cv2.addWeighted(x_over, alpha_value, x, 1 - alpha_value, 0, x)
+        cv2.putText(img, 'face', (x_min, y_min -5), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 0), 1)
+        cv2.rectangle(x, (x_min, y_min), (x_max, y_max), (255, 255, 0), 2)
