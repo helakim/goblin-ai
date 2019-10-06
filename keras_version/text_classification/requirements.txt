@@ -1,0 +1,7 @@
+sentencepiece
+gensim
+sklearn
+pandas
+tqdm
+tensorflow
+keras
