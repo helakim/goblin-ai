@@ -25,8 +25,7 @@
 - [Joint Attention Expansion Pyramid Network for Text Region Segmentation](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/text_segmentation_v1) - (Called by JYP)
 - [Expansion Pyramid Network for high resolution face detection](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection) - (Called by Only-U)
 - [Re-Extraction-Network for Special Trace MAP](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/re_extraction_network) - (Called by Argos-EYE)
-- [Korean Text Recognition](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/text_recognition_v1)
-
+- [High Efficient non-lexicon `A` model for Korean Text Recognition](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/text_recognition_v1) - (Called by HELA-EYE)
 ### Neural Graph
 
 - [Graph-based Korean sentence summary algorithm](https://github.com/helakim/goblin-ai/tree/master/graph_algorithm/text_summary) - (Called by Cerberus Summary)
