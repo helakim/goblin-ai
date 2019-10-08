@@ -1,7 +1,9 @@
 ![goblin-ai](fig/google_search_free_reuse.png)
+
+
 ## Start Day: Tuesday, 24 September 2019
 
-## Introduction
+## Goblin-AI Introduction
 1. Goblin AI is a library of deep learning models and datasets designed to make deep learning more accessible
 
 2. The ultimate goal of SEMI-AutoDL is to provide easily accessible deep learning tools to domain experts with limited data science or machine learning background
