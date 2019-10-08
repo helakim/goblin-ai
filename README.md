@@ -38,11 +38,15 @@
 ### End to End Deep Learning Model
   - Coming Soon :)
 
-Toy project created using Goblin-AI (Using `Goblin-AI`)
+### Toy project created using Goblin-AI (Using `Goblin-AI`)
  - [Neural Language Processing Application Level ]() - (Called by Quasar) 
     1.  Using `Cerberus Summary` (Graph-based Korean sentence summary algorithm)
     
     2.  Using GB-pool with weighted convolution for large scale text Classification
+
+### Experiment of Deep learning model
+ - Coming Soon :)
+ 
 ## Updates
 
 #### version: 0.0.5 (05, october, 2019)
@@ -70,6 +74,10 @@ Toy project created using Goblin-AI (Using `Goblin-AI`)
 #### version: 0.0.1 (29, september, 2019)
  - Implementation of the Cerberus Summary using Python only
  - Add the cerberus summary inference code
+ 
+ 
+## Contributing
+appreciate all contributions to improve `goblin-ai` Please refer to CONTRIBUTING.md for the contributing guideline.
    
 ## Author
  - Kyung Tae Kim (firefoxdev0619@gmail.com)
