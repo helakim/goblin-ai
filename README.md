@@ -1,3 +1,4 @@
+![goblin-ai](fig/google_search_free_reuse.png)
 ## Start Day: Tuesday, 24 September 2019
 
 ## Introduction

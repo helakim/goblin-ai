@@ -49,8 +49,8 @@ if __name__ == '__main__':
     swiu_graph = sigmoid_weighted_linear_units(one_dim_tensor)
     relu_graph = torch.relu(one_dim_tensor)
     tanh = torch.tanh(one_dim_tensor)
-    
-    plt.title('compare results (swiu vs relu)')
+
+    plt.title('compare result (swiu vs relu)')
     plt.plot(one_dim_tensor.numpy(), swiu_graph.numpy(), label='sigmoid_weighted_linear_units')
     plt.plot(one_dim_tensor.numpy(), relu_graph.numpy(), label='relu')
     plt.plot(one_dim_tensor.numpy(), tanh.numpy(), label='tanh')
