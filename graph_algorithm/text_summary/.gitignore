@@ -221,7 +221,7 @@ dmypy.json
 # Mono auto generated files
 mono_crash.*
 
-# Build results
+# Build result
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -344,7 +344,7 @@ _TeamCity*
 .axoCover/*
 !.axoCover/settings.json
 
-# Visual Studio code coverage results
+# Visual Studio code coverage result
 *.coverage
 *.coveragexml
 
@@ -528,7 +528,7 @@ paket-files/
 *.odx.cs
 *.xsd.cs
 
-# OpenCover UI analysis results
+# OpenCover UI analysis result
 OpenCover/
 
 # Azure Stream Analytics local run output

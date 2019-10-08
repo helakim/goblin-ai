@@ -1,30 +1,42 @@
 ## Start Day: Tuesday, 24 September 2019
 
 ## Introduction
-Update Coming soon :)
+1. Goblin AI is a library of deep learning models and datasets designed to make deep learning more accessible
 
-Korean documents will be added later
+2. The ultimate goal of SEMI-AutoDL is to provide easily accessible deep learning tools to domain experts with limited data science or machine learning background
+
+3. Supported Ai-Goblin provides the visualization and tooling needed for Deep Learning experimentation (with VisDom)
+
+4. Supported Experiment with various deep learning methods using the JupyterLabs
+
+5. Each of the Deep Learning models is independent and simple to apply to the application
+
+6. [Using the ai-hub data :)](http://www.aihub.or.kr/) 
+
+7. Korean documents will be added later
 
 ## Major features (Click the link)
 
-Computer Vision
+### Computer Vision
 
 - [Joint Attention Expansion Pyramid Network for Text Region Segmentation](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/text_segmentation_v1) - (Called by JYP)
 - [Expansion Pyramid Network for high resolution face detection](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/face_detection) - (Called by Only-U)
 - [Re-Extraction-Network for Special Trace MAP](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/re_extraction_network) - (Called by Argos-EYE)
 - [Korean Text Recognition](https://github.com/helakim/goblin-ai/tree/master/pytorch_version/text_recognition_v1)
 
-Neural Graph
+### Neural Graph
 
 - [Graph-based Korean sentence summary algorithm](https://github.com/helakim/goblin-ai/tree/master/graph_algorithm/text_summary) - (Called by Cerberus Summary)
 
-Neural Language Processing
+### Neural Language Processing
 
 - [GB-pool with weighted convolution for large scale text Classification](https://github.com/helakim/goblin-ai/tree/master/keras_version/text_classification)
 
-Explainable Deep Learning Model
+### Explainable Deep Learning Model
+ - Coming Soon :)
 
-End to End Deep Learning Model
+### End to End Deep Learning Model
+  - Coming Soon :)
 
 Toy project created using Goblin-AI (Using `Goblin-AI`)
  - [Neural Language Processing Application Level ]() - (Called by Quasar) 
