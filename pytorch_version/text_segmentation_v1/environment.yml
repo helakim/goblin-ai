@@ -17,3 +17,4 @@ dependencies:
   - scikit-image
   - pyclipper
   - fire
+  - jinja2
