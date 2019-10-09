@@ -41,7 +41,7 @@
   - Coming Soon :)
 
 ### Toy project created using Goblin-AI (Using `Goblin-AI`)
- - [Neural Language Processing Application Level ]() - (Called by Quasar) 
+ - [Neural Language Processing Application Level](https://github.com/helakim/goblin-ai/tree/master/application/quasar) - (Called by Quasar) 
     1.  Using `Cerberus Summary` (Graph-based Korean sentence summary algorithm)
     
     2.  Using GB-pool with weighted convolution for large scale text Classification
