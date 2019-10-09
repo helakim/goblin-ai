@@ -81,6 +81,8 @@ python model_inference.py --model_path=pre_trained_model/best_acc.pth \
  
 
 ## Todo
+ - [ ] Semi-Auto Labels for Custom Data Learning (Most Important Functionality
+)
  - [ ] Deep Learning Model (JYP) training code
  - [ ] Deep Learning Model (JYP) inference code
  - [X] Add reference
