@@ -61,6 +61,22 @@ export default {
         },
 
         onResponse(res)    {
+            // var response = {
+            //     results : []
+            // };
+            // var maxResults = 10;
+
+            // // translate GitHub API response to work with search
+            // $.each(res['1'], function(index, item) {
+            //     if(index >= maxResults) {
+            //         return false;
+            //     }
+
+            //     // add result to category
+            //     response.results.push({
+            //         title: item[0],
+            //     });
+            // });
 
             return res;
         },

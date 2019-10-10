@@ -174,7 +174,8 @@
 <script>
 import Router from 'vue-router';
 import _ from 'underscore';
-// import Scripts from '../Main/Scripts';
+
+import Scripts from '../Main/Scripts';
 
 import service from './service';
 

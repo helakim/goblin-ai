@@ -17,7 +17,9 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-toggle-element="{className: 'active'}"
+            <tr v-toggle-element="{
+                    className: 'active'
+                }"
                 v-if="tableData.length"
                 v-for="(item, index) in tableData"
                 @click="selectItem(item.key)"
