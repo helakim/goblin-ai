@@ -18,7 +18,7 @@ python3 server.py
 ![get](fig/fig_2_rest_api_post.png)
 
 #### POST request and response
-![post](fig/fig_2_rest_api_get.png)
+![post](fig/fig_1_rest_api_get.png)
 
 ## Goblin-AI Server Arguments
  1. `ALLOWED_EXTENSIONS` is the set of allowed file extensions.
