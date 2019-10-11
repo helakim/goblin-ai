@@ -35,7 +35,7 @@
 - [GB-pool with weighted convolution for large scale text Classification](https://github.com/helakim/goblin-ai/tree/master/keras_version/text_classification)
 
 ### Explainable Deep Learning Model
- - Coming Soon :)
+  - Coming Soon :)
 
 ### End to End Deep Learning Model
   - Coming Soon :)
@@ -49,7 +49,15 @@
 ### Experiment of Deep learning model
  - Coming Soon :)
  
+### ETC
+ - [Simple Representational State Transfer API Model Server for Goblin-Ai Deploy](https://github.com/helakim/goblin-ai/tree/master/application/basic_model_server)
+ 
 ## Updates
+
+#### version: 0.0.6 (11, october, 2019)
+ - A `VueJS` implementation of Quasar (Application of Goblin AI)
+ - A `Flask` implementation of Rest API Server (Serving Goblin AI models)
+ - Fixed some bugs and typo
 
 #### version: 0.0.5 (05, october, 2019)
  - A `pure pytorch` implementation of Korean Text Recognition

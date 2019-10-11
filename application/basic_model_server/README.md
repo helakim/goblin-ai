@@ -33,6 +33,9 @@ python3 server.py
 ## TODO
 1. [ ] computer vision module
 2. [ ] natural language processing module
+3. [ ] add `GRPC` server
 
 ## References
-[1. Flask is a lightweight WSGI web application framework](https://palletsprojects.com/p/flask/)
+1. [Flask is a lightweight WSGI web application framework](https://palletsprojects.com/p/flask/)
+
+2. [gRPC - An RPC library and framework](https://grpc.io/)
