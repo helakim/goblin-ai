@@ -15,10 +15,10 @@ python3 server.py
 *Goblin-AI* now can be accessed by going to http://localhost:8000 in your browser, or your own host address if specified.
 
 #### GET request and response
-![get](fig/fig_1_rest_api_get.png)
+![get](fig/fig_2_rest_api_post.png)
 
 #### POST request and response
-![post](fig/fig_2_rest_api_post.png)
+![post](fig/fig_2_rest_api_get.png)
 
 ## Goblin-AI Server Arguments
  1. `ALLOWED_EXTENSIONS` is the set of allowed file extensions.
