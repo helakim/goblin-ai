@@ -16,7 +16,7 @@
 
 - 한정 된 문자인식 테스크를 해결 하는것이 목적이 아니라 다양한 상황(e.g. 야외문자, 자동차 번호판, 명함, 신용카드, 여권)을 해결 하기 위해 절대적인 성능 보다 유연한 모델을 적용 했습니다 (사전학습 모델)
 
-- 다양한 post processing 실험을 통해 다양한 테스크에 적용 가능한 모델 입니다
+- post processing 실험을 통해 다양한 테스크에 적용 가능한 모델 입니다
 
 - Goblin-Ai 제공하는 Rest API 서버를 적용하면 기존에 만들어진 Application에 빠르게 적용 할 수 있습니다
 
@@ -26,6 +26,7 @@
 
 - Visdom을 통해 시각화를 할 수 있습니다(e.g. 모델 그래프, loss 및 matirx)
 
+- local machine 에서 training and evaluation 완료
 ## Environment
 - pytorch 1.2.0
 - torchvision >= 0.3.0
