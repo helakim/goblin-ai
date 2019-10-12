@@ -14,9 +14,8 @@
 
 5. Each of the Deep Learning models is independent and simple to apply to the application
 
-6. [Using the ai-hub data :)](http://www.aihub.or.kr/) 
+6. [Build a Goblin-AI Deep Learning Model with Ai-hub data)](http://www.aihub.or.kr/) 
 
-7. Korean documents will be added later
 
 ## Major features (Click the link)
 
