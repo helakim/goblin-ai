@@ -3,6 +3,7 @@
 
 ## Start Day: Tuesday, 24 September 2019
 
+
 ## Goblin-AI Introduction
 1. Goblin AI is a library of deep learning models and datasets designed to make deep learning more accessible
 
@@ -56,6 +57,7 @@
 #### version: 0.0.6 (11, october, 2019)
  - A `VueJS` implementation of Quasar (Application of Goblin AI)
  - A `Flask` implementation of Rest API Server (Serving Goblin AI models)
+ - A `Keras` implementation of GB-pool with weighted convolution for large scale text Classification
  - Fixed some bugs and typo
 
 #### version: 0.0.5 (05, october, 2019)

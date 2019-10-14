@@ -1,3 +1,11 @@
+## Goblin Ai Text Classification Models
+
+---
+| **`Status`** | **`Pyhon version`** | **`Language`** | **`Windows`** | **`Crated`** | **`Description`** | **`build`** |
+|---------------------|------------------|-------------------|---------------|---------------|---------------|---------------|
+|![Status](https://img.shields.io/pypi/status/Django.svg) |![Python Version](https://img.shields.io/pypi/pyversions/Django.svg)|![Code Language](https://img.shields.io/badge/python3.6-100%25-red.svg)| ![Window Supported](https://img.shields.io/badge/supported-not-orange.svg) |![Created by](https://img.shields.io/badge/Sunday%2006%2C%20Oct%202019-hela.kim-ff69b4.svg)|![Description](https://img.shields.io/badge/TextClassification-Model-yellowgreen.svg)|![build](https://img.shields.io/circleci/token/YOURTOKEN/project/github/RedSparr0w/node-csgo-parser/master.svg)
+---
+
 ## Introduce (Korean Version)
 - 긴 한국어 문장, 문서를 분류(classification), 회귀(regression)하는 convolution neural network를 기반으로 하는 deep learning model입니다.
 
