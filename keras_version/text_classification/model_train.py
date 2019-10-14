@@ -32,42 +32,36 @@ from keras.callbacks import ReduceLROnPlateau
 
 
 def hyper_parameter():
-    args = argparse.ArgumentParser(description='Sentiment analysis model training hyperparameter')
+    args = argparse.ArgumentParser(description='text classification or regression model training hyper-parameter')
     # ------
     # Text data parameter
-    args.add_argument('-i', '--input_text', default='data/ratings.txt', type=str,
-                      help='text location to make text only file')
-    args.add_argument('-o', '--output_location', default='data/text_only.txt', type=str,
-                      help="text only file location to save")
-    args.add_argument('-max_len', '--max_len', default=30, type=int,
-                      help="Parameter for training neural network to fix input sentnece len")
+    args.add_argument('-i', '--input_text', default='data/ratings.txt', type=str, help='text location to make text only file')
+    args.add_argument('-o', '--output_location', default='data/text_only.txt', type=str, help="text only file location to save")
+    args.add_argument('-max_len', '--max_len', default=30, type=int, help="Parameter for training neural network to fix input sentence len")
     # ------
     # Sentencepiece model parameter for train and save
     args.add_argument('-sp_text_path', default='data/text_only.txt', type=str, help="input text location")
     args.add_argument('-sp_model_path', default='pre_train/spm_model', type=str, help="trained model save location")
-    args.add_argument('-sp_type', default='bpe', type=str,
-                      help=" model type. Choose from bpe (default), unigram, char, or word."
-                           "The input sentence must be pretokenized when using word type.")
+    args.add_argument('-sp_type', default='bpe', type=str, help=" model type. Choose from bpe (default), unigram, char, or word The input sentence must be pretokenized when using word type.")
     args.add_argument('-sp_vocab_size', default=37000, type=int, help="vocabulary size")
     args.add_argument('-sp_coverage', default=0.9995, type=float, help="amount of characters covered by the model")
+    args.add_argument('-sp_train', default=False, type=bool, help="use sentencepiece")
 
     # ------
     # Word2vec model parameter for train and save
-    args.add_argument('-w2v_model_path', default='pre_train/word2vec.model', type=str,
-                      help="trained model save loaction")
-    args.add_argument('-w2v_text_path', default='data/text_only.txt', type=str,
-                      help="location of text to train word2vec")
+    args.add_argument('-w2v_model_path', default='pre_train/word2vec.model', type=str, help="trained model save loaction")
+    args.add_argument('-w2v_text_path', default='data/text_only.txt', type=str, help="location of text to train word2vec")
     args.add_argument('-w2v_embed_size', default=300, type=int, help="word embedding size")
     args.add_argument('-w2v_type', default=1, type=int, help="0 for CBOW, 1 for skip-gram")
     args.add_argument('-w2v_loss', default=1, type=int, help="0 for negative sampling, 1 for hierarchical softmax")
     args.add_argument('-w2v_min_count', default=3, type=int, help="minimum count of words to train")
     args.add_argument('-w2v_window_size', default=2, type=int, help="window size of training model")
+    args.add_argument('-w2v_train', default=False, type=bool, help="use wrod2vec")
 
     # ------
     # Neural Net parameter for train and save
     args.add_argument('-nn_model_path', default='weights/', type=str, help='location of trained model to save')
-    args.add_argument('-nn_model', default='cnn', type=str,
-                      help='parameter to choose which model to train. list of model = [lstm, cnn]')
+    args.add_argument('-nn_model', default='cnn', type=str, help='parameter to choose which model to train. list of model = [lstm, cnn]')
     args.add_argument('-nn_test_set_path', default='data/test_co_classification.txt')
     args.add_argument('-nn_train_set_path', default='data/train_co_classification.txt')
     args.add_argument('-nn_keep_prob', default=0.25, type=float)
@@ -192,13 +186,15 @@ def main():
 
     # ------
     # Train and save 'sentence_piece' model
-    sp_worker(args)
-    # print("[@] Sentencepiece csv file path {}, model file path {}")
+    if args.sp_train:
+        sp_worker(args)
+        # print("[@] Sentencepiece csv file path {}, model file path {}")
 
     # ------
     # Training Word2vec model and save // prepare lookup_table
-    w2v_worker(args, whole_text)
-    # print("[@] Word2vec model saved")
+    if args.w2v_train:
+        w2v_worker(args, whole_text)
+        # print("[@] Word2vec model saved")
 
     # ------
     # Network train
