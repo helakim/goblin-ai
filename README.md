@@ -91,4 +91,4 @@
 appreciate all contributions to improve `goblin-ai` Please refer to CONTRIBUTING.md for the contributing guideline.
    
 ## Author
- - Kyung Tae Kim (firefoxdev0619@gmail.com)
+ - Kyung Tae Kim (kt.kim@acm.org)
